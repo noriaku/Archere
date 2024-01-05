@@ -1,0 +1,33 @@
+{
+	"packages": [
+		"noto-fonts-emoji",
+		"git",
+		"curl",
+		"base-devel",
+		"webmin",
+		"studio-3t",
+		"gzip",
+		"tar",
+		"zsh",
+		"mysql",
+		"npm",
+		"nodejs",
+		"yarn",
+		"unzip",
+
+		"visual-studio-code-bin",
+		"koala-bin",
+		"git-cola",
+		"linkchecker",
+		"electrocrud-bin",
+		"virtualbox",
+		"virtualbox-guest-iso",
+		"virtualbox-ext-oracle",
+		"youtube-music-bin",
+
+		"papirus-icon-theme",
+		"flat-remix",
+		"latte-dock",
+		"mechvibes"
+	]
+}

@@ -1,0 +1,18 @@
+{
+    "packages": [
+        "com.discordapp.Discord",
+        "com.getpostman.Postman",
+        "org.telegram.desktop",
+        "com.microsoft.Edge",
+        "org.qbittorrent.qBittorrent",
+        "com.github.micahflee.torbrowser-launcher",
+        "io.dbeaver.DBeaverCommunity",
+        "io.github.shiftey.Desktop",
+        "io.github.shiftey.Desktop",
+        "org.jupyter.JupyterLab",
+        "com.github.marktext.marktext",
+        "com.jetbrains.DataGrip",
+        "org.octave.Octave",
+        "org.librepcb.LibrePCB"
+    ]
+}
