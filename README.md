@@ -1,5 +1,6 @@
 # Archere
 
+<br/>
 <p align="center">
 <img src="./images/logoArchere.png" width=250/>
 </p>
