@@ -1,0 +1,15 @@
+{
+  "type": "commonjs",
+  "dependencies": {
+    "chalk": "4.0.0",
+    "child_process": "1.0.2",
+    "figlet": "1.7.0",
+    "inquirer": "8.0.0"
+  },
+  "scripts": {
+    "app:start": "node app.js install"
+  },
+  "devDependencies": {
+    "nodemon": "3.0.2"
+  }
+}
