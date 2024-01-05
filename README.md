@@ -1,8 +1,8 @@
 # Archere
 
-<br/>
 <p align="center">
-<img src="./images/logoArchere.png" width=250/>
+  <img src="./images/logoArchereDark.png#gh-dark-mode-only" width="500" alt="logo">
+  <img src="./images/logoArchereLight.png#gh-light-mode-only" width="500" alt="logo">
 </p>
 
 ## Installation
