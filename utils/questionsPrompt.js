@@ -9,9 +9,10 @@ const questionsPrompt = [
         name: "packageType",
         message: chalk.bgMagenta.black.bold("¿What type of packages do you want to install?"),
         choices: [ 
-            { name: chalk.italic("Arch Packages"), value: "Arch Packages" },
-            { name: chalk.italic("Flatpak Packages"), value: "Flatpak Packages" },
-            { name: chalk.italic("Exit"), value: "Exit" }
+            { name: chalk.italic.white("1. Arch packages"), value: "Arch packages" },
+            { name: chalk.italic.white("2. Flatpak packages"), value: "Flatpak packages" },
+            { name: chalk.italic.white("3. Dotfiles setup"), value: "Dotfiles setup" },
+            { name: chalk.italic.red("Exit"), value: "Exit" }
         ],
     },
 ]

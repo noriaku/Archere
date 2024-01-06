@@ -3,6 +3,7 @@ const chalk = require("chalk");
 const { exec } =  require("child_process");
 
 const archPackages = require("../packages/archPackages.json");
+const { msgFinishedPrompt } = require("../utils/");
 
 // ========== Functions
 const installEachPackage = async (eachPackage) => {
@@ -12,10 +13,11 @@ const installEachPackage = async (eachPackage) => {
             // if reinstall ocurred, do it
             let stderrMsgReinstall = stderr.includes('is up to date -- reinstalling');
 
+            // manage error & message it via console
             if (err || (stderr && !stderr.includes('is up to date -- reinstalling'))) {
                 console.log(chalk.bold.italic.red(`  Error installing ${eachPackage}: ${err ? err.message : stderr}`));
             } else {
-                let statusMessage = stderrMsgReinstall  ? `${chalk.italic.bold.blue(eachPackage)} it's up to date.` : `${chalk.italic.green("Installed OK: ")} ${chalk.bold.blue(eachPackage)}\n`;
+                let statusMessage = stderrMsgReinstall  ? `${chalk.italic.bold.blue(eachPackage)} it's up to date.` : `${chalk.italic.green("Installed OK:")} ${chalk.bold.blue(eachPackage)}\n`;
                 console.log(`  ${statusMessage}`);
             };
 
@@ -25,7 +27,7 @@ const installEachPackage = async (eachPackage) => {
     });
 };
 
-const installArchPackages = async () => {
+const installArchPackages = async (main) => {
     const archPackagesJson = archPackages.packages;
 
     // iterate over each package, you can add and delete them!
@@ -37,7 +39,8 @@ const installArchPackages = async () => {
             process.exit();
         };
     };
-    await console.log(chalk.italic.magenta("\n Installation finished."));
+    await msgFinishedPrompt();
+    setImmediate(main);
 };
 
 // ========== Exports

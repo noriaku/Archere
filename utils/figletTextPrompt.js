@@ -1,9 +1,9 @@
 // ========== Functions
 const figletConfigText = {
-    font: "Big",
+    font: "Bloody",
     horizontalLayout: "fitted",
-    verticalLayout: "default",
-    width: 70,
+    verticalLayout: "full",
+    width: 80,
     whitespaceBreak: true,
 };
 
