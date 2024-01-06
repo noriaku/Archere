@@ -1,0 +1,14 @@
+{
+    "alacritty": {
+        "srcFrom": "./alacritty/",
+        "srcDest": "~/.config/alacritty/"
+    },
+    "starship": {
+        "srcFrom": "./starship/",
+        "srcDest": "~/.config/starship/"
+    },
+    "zathura": {
+        "srcFrom": "./zathura/",
+        "srcDest": "~/.config/zathura/"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    // ========== general
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorTheme": "Catppuccin Macchiato",
+
+    // ========== editor
+    "editor.mouseWheelZoom": true,
+    "editor.fontFamily": "Fantasque Sans Mono, monospace",
+    "editor.minimap.enabled": false,
+    "editor.indentSize": "tabSize",
+    "editor.tabSize": 4
+
+    // ========== tweaks
+}
