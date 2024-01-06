@@ -8,7 +8,7 @@
 
 ## Installation
 
-Before you start, it's imprediscindible install yay in your Arch Linux OS, because saround 60% packages are hosted at AUR. You can check this [guide](https://itsfoss.com/install-yay-arch-linux/) 
+Before we begin, it's essential install it on you Arch Linux OS, because around 60% of the packages are hosted on AUR. You can consult this [guide](https://itsfoss.com/install-yay-arch-linux/) 
 
 ## Important
 
