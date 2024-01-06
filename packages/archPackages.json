@@ -1,5 +1,11 @@
 {
 	"packages": [
+		"ruby",
+		"exa",
+		"starship",
+		"qt5-graphicaleffects",
+		"qt5-svg",
+		"qt5-quickcontrols2",
 		"noto-fonts-emoji",
 		"git",
 		"curl",
