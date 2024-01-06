@@ -3,13 +3,14 @@ const inquirer = require("inquirer");
 const figlet = require("figlet");
 
 const { questionsPrompt, figletConfigText } = require("./utils/")
-const { installArchPackages, installFlatpakPackages, handleExitPrompt, handleFigletMsg } = require("./functions/")
+const { installArchPackages, installFlatpakPackages, installDotfiles, handleExitPrompt, handleFigletMsg } = require("./functions/")
 
 // ========== setup
 let invoqueExit = false; 
 
 async function main() {
-    await figlet("Arch Dotfiles", figletConfigText, (err, data) => handleFigletMsg(err, data));
+    console.clear();
+    await figlet("Archere", figletConfigText, (err, data) => handleFigletMsg(err, data));
 
     // handle exit
     if (invoqueExit) return;
@@ -17,18 +18,20 @@ async function main() {
     // asyncronous function -> wait until conclude
     const userAns = await inquirer.prompt(questionsPrompt);
     switch (userAns.packageType) {
-    case "Arch Packages":
-        await installArchPackages();
+    case "Arch packages":
+        await installArchPackages(main);
         break;
-    case "Flatpak Packages":
-        await installFlatpakPackages();
+    case "Flatpak packages":
+        await installFlatpakPackages(main);
+        break;
+    case "Dotfiles setup":
+        await installDotfiles(main);
         break;
     case "Exit": 
         handleExitPrompt();
         invoqueExit = true;
         return;
     };
-    setImmediate(main);
 };
 
 main();
